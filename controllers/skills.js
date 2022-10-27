@@ -20,8 +20,8 @@ function show(req, res) {
 }
 
 function create(req, res) {
-    Skill.create(req.body.skill);
-    console.log(req.body.skill);
+    Skill.create(req.body);
+    console.log(req.body);
     res.redirect("/skills");
 }
 
