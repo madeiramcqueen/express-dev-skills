@@ -27,6 +27,7 @@ function create(skill) {
 }
 
 function deleteOne(id) {
+    id = parseInt(id)
     const idx = skills.findIndex(
         skill => skill.id === parseInt(id));
     skills.splice(idx, 1);

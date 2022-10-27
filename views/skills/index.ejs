@@ -12,15 +12,14 @@
     <h1>Madeira's Web Dev Skills!</h1>
     <p>
         <% skills.forEach(function(s) { %>
-            <li>
+            <ul>
                 <form action="/skills/<%= s.id %>?_method=DELETE" class="delete-form" method="POST">
                     <button type="submit">X</button>
                 </form>
-                <!-- <a href="/skills/<%= s.id %>"> -->
                 <%= s.skill %>
                     </a>
 
-            </li>
+                </ul>
             <% }); %>
                 </a>
                 <a href="/skills/new">Add Skill</a>
