@@ -5,6 +5,11 @@ function getAll() {
     return skills
 }
 
+function create(skill) {
+    skills.push(skill);
+}
+
 module.exports = {
-    getAll
+    getAll,
+    create
 }

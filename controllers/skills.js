@@ -15,11 +15,13 @@ function index(req, res) {
 }
 
 function create(req, res) {
-    res.send('skills/create') 
+    Skill.create(req.body.skill);
+    console.log(req.body.skill);
+    res.redirect("/skills");
 }
 
 function newSkill(req, res) {
-    res.send('skills/new')
+    res.render('skills/new')
 }
 
 // function show(req, res) {
