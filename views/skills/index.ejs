@@ -16,10 +16,10 @@
                 <form action="/skills/<%= s.id %>?_method=DELETE" class="delete-form" method="POST">
                     <button type="submit">X</button>
                 </form>
-                <%= s.skill %>
-                    </a>
-
-                </ul>
+                <a href="/skills/<%= s.id %>">
+                    <%= s.skill %>
+                </a>
+            </ul>
             <% }); %>
                 </a>
                 <a href="/skills/new">Add Skill</a>
